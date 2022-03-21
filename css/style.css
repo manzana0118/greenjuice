@@ -1,0 +1,1578 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('../css/notosanskr/NotoSansKR.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0px;
+    vertical-align: middle;
+}
+
+html {
+    background: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    word-break: break-all;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 공통 요소 */
+.container {
+    position: relative;
+    display: block;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.good-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.good-name {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.35;
+    word-break: keep-all;
+    letter-spacing: -0.5px;
+    margin: 8px 0px;
+}
+
+.good-price {
+    position: relative;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+}
+
+.good-price em {
+    font-size: 15px;
+    color: #999;
+}
+
+.good-heart {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 27px;
+    height: 23px;
+    border: 0;
+    cursor: pointer;
+    font-size: 0px;
+
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -250px -10px;
+}
+
+.good-heart-active {
+    background-position: -287px -10px !important;
+}
+
+.good-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
+    display: block;
+    width: 36px;
+    height: 36px;
+    
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+
+    line-height: 36px;
+    font-weight: 500;
+    font-size: 11px;
+    border-radius: 50%;
+}
+
+.good-new {
+    background-color: #f18c15;
+}
+
+.good-best {
+    background-color: #47ad1a;
+}
+
+.good-rank {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    
+    display: block;
+    width: 40px;
+    height: 20px;
+
+    font-size: 16px;
+    color: #999;
+    text-align: left;
+}
+
+.good-rank em {
+    font-size: 26px;
+    color: #333;
+    line-height: 20px;
+}
+
+/* 위로가기 */
+.gotop {
+    position: fixed;
+    left: calc(50% + 590px);
+    bottom: 240px;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    border: 1px solid #E3E3E3;
+    background-color: #fff;
+    box-shadow: 1px 0 8px rgb(0 0 0 / 10%);
+    z-index: 99;
+
+    font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.gotop-active {
+    opacity: 1;
+}
+
+.gotop i {
+    position: relative;
+    display: block;
+    width: 12px;
+    height: 13px;
+
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -747px -314px;
+    margin: 0 auto;
+
+    margin-bottom: 5px;
+}
+/* 위로가기 끝 */
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+/* 상단 */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: block;
+    width: 100%;
+    height: 106px;
+
+    z-index: 999;
+    background-color: #fff;
+}
+
+/* 헤더 상단 */
+.header-top {
+    position: relative;
+    display: block;
+    height: 32px;
+
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-top .container {
+    height: 100%;
+}
+
+.header-top-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+
+    overflow: hidden;
+}
+
+.header-top-left li {
+    position: relative;
+    display: block;
+
+    float: left;
+    padding: 0 10px;
+}
+
+/* 메뉴 양쪽 여백 제거 */
+.header-top-left li:first-child {
+    padding-left: 0px;
+}
+
+.header-top-left li:last-child {
+    padding-right: 0px;
+}
+
+/* 라인 넣기 */
+.header-top-left li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 1px;
+    height: 9px;
+    background-color: #aaa;
+}
+
+.header-top-left li:last-child::after {
+    content: none;
+}
+
+.header-top-left li a {
+    position: relative;
+    display: block;
+
+    font-family: "돋움", 'Dotum','Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 29px;
+    color: #9b9b9b;
+}
+
+/* 헤더 탑 오른쪽 */
+.header-top-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+
+    overflow: hidden;
+}
+
+.header-top-right li {
+    position: relative;
+    display: block;
+
+    float: left;
+    padding: 0 10px;
+}
+
+.header-top-right li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 1px;
+    height: 9px;
+    background-color: #aaa;
+}
+
+.header-top-right li:first-child {
+    padding-left: 0px;
+}
+
+.header-top-right li:last-child {
+    padding-right: 0px;
+}
+
+.header-top-right li:last-child::after {
+    content: none;
+}
+
+.header-top-right li a {
+    position: relative;
+    display: block;
+
+    font-family: "돋움", 'Dotum','Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 29px;
+    color: #9b9b9b;
+}
+
+/* 헤더 메인 */
+.header-main {
+    position: relative;
+    display: block;
+    height: 75px;
+
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-main .container {
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 65px;
+    height: 47px;
+
+    background: url('../images/h_logo.png') no-repeat center;
+    font-size: 0;
+}
+
+.nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-53%, -50%);
+    display: block;
+}
+
+.gnb {    
+    position: relative;
+    display: block;
+
+    /* overflow: hidden; */
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.gnb > li {    
+    position: relative;
+    display: inline-block;
+    /* float: left; */
+    padding: 0 27px;
+}
+
+.gnb > li > a {    
+    position: relative;
+    display: block;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+
+    transition: color 0.3s;
+}
+
+.gnb > li > a:hover {
+    color: #81b825;
+}
+
+.help-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+
+    overflow: hidden;
+}
+
+.help-menu a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    float: left;
+    font-size: 0;
+
+    margin-left: 25px;
+}
+
+.help-menu a:nth-child(1) {
+    background-position: -10px -10px;
+    margin-left: 0px;
+}
+
+.help-menu a:nth-child(2) {
+    background-position: -50px -10px;
+}
+
+.help-menu a:nth-child(3) {
+    background-position: -90px -10px;
+}
+
+
+
+/* 메인 */
+.main {
+    position: relative;
+    display: block;
+    /* 상단 영역 fiexd 겹치는 부분(헤더 높이만큼) 밀어주기 */
+    padding-top: 106px;
+}
+
+/* 메인 비주얼 */
+.visual {
+    position: relative;
+    display: block;
+    height: 561px;
+
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sw-visual .swiper-slide a {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.sw-visual-prev {
+    position: absolute;
+    left: calc(50% - 615px);
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 34px;
+    height: 66px;
+
+    background: url('../images/ui_arr_swiper.png') no-repeat;
+    background-position: 0px 0px;
+    border: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.sw-visual-next {
+    position: absolute;
+    left: calc(50% + 570px);
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 34px;
+    height: 66px;
+
+    background: url('../images/ui_arr_swiper.png') no-repeat;
+    background-position: -34px 0px;
+    border: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.sw-visual-pg .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    position: absolute;
+    left: calc(50% + 520px) !important;
+    bottom: 110px !important;
+
+    display: block;
+    width: 52px !important;
+    height: 34px;
+    line-height: 34px;
+    letter-spacing: -1.5px !important;
+
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 17px;
+}
+
+
+/* 맞춤서비스 */
+.service {
+    position: relative;
+    display: block;
+
+    background-color: #f4f4f4;
+    /* 
+        margin-top 조금 위험합니다.
+        해결법은 padding / border를 활용
+     */
+    padding-top: 1px;
+
+    z-index: 99;
+}
+
+.service .container {
+    background-color: #fff;
+    padding: 30px;
+    padding-right: 40px;
+
+    margin-top: -85px;
+    box-shadow: 0 3px 15px rgb(77 77 77 / 5%);
+}
+
+.service h2 {
+    position: relative;
+    display: block;
+    font-size: 26px;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.service-wrap {
+    position: relative;
+    display: block;
+}
+
+.service-slide {
+    position: relative;
+    display: block;
+    width: 440px;
+    height: 90px;
+
+    /* background-color: #98ce67; */    
+    padding-right: 20px;
+
+    float: left;
+}
+
+.sw-service .swiper-slide a {
+    position: relative;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 65px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.sw-service .swiper-slide a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    display: block;
+    width: 46px;
+    height: 40px;
+    background: url('../images/ico_sprite_pc.png') no-repeat;    
+}
+
+.service-ico-01:before {
+    background-position: -8px -84px !important;
+}
+
+.service-ico-02::before {
+    background-position: -63px -84px !important;
+}
+
+.service-ico-03::before {
+    background-position: -116px -84px !important;
+}
+
+.service-ico-04::before {
+    background-position: -170px -84px !important;
+}
+
+.service-ico-05::before {
+    background-position: -560px -84px !important;
+}
+
+.service-ico-06::before {
+    background-position: -621px -84px !important;
+}
+
+.sw-service-control {
+    position: absolute;
+    right: 16px;
+    top: -14px;
+    display: block;
+    width: 100%;
+    z-index: 99;
+}
+
+.sw-service-pg {    
+    width: 100%;
+    text-align: right;
+}
+
+.sw-service-control .sw-service-pg .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    background-color: #ddd;
+    margin-left: 7px;
+}
+
+.sw-service-control .sw-service-pg .swiper-pagination-bullet-active {
+    background-color: #47ad1a;
+}
+
+.service-login {
+    position: relative;
+    display: block;
+    width: calc(100% - 440px);
+    height: 90px;
+
+    border-left: 1px dashed #e5e5e5;
+    float: right;
+}
+
+.service-login-txt {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    font-size: 32px;
+    line-height: 1.375;
+    letter-spacing: -1.5px;
+
+    padding-left: 35px;
+}
+
+.service-login-txt strong {
+    font-weight: 700;
+}
+
+.service-login-join {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    height: 50px;
+
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    background: #47ad1a;
+
+    padding: 0 38px;
+}
+
+
+/* 오늘의 상품 */
+.today {
+    position: relative;
+    display: block;
+    background-color: #f4f4f4;
+}
+
+.today .container {
+    padding: 90px 0;
+}
+
+.today h2 {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -2.5px;
+    margin-bottom: 25px;
+}
+
+.today-wrap {
+    position: relative;
+    display: block;
+}
+
+.today-list {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.today-list > li {
+    position: relative;
+    display: block;
+
+    float: left;
+    width: 25%;
+}
+
+.good {
+    position: relative;
+    display: block;
+    width: 270px;
+    height: 410px;
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+
+    overflow: hidden;
+}
+
+.today-list li:nth-child(2) .today-good {
+    margin: 0 auto;
+}
+
+.today-list li:nth-child(3) .today-good {
+    margin: 0 auto;
+}
+
+.today-list li:nth-child(4) .today-good {
+    float: right;
+}
+
+.today-more {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.today-more a {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    color: #555;
+}
+
+.today-more a::after {
+    content:'';
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -674px -80px;
+
+    vertical-align: -8px;
+    margin-left: 7px;
+}
+
+
+
+/* 베스트 상품 */
+.best {
+    position: relative;
+    display: block;
+}
+
+.best .container {
+    padding: 110px 0;
+}
+
+.best-left {
+    position: relative;
+    display: block;
+    width: 220px;
+    float: left;
+}
+
+.best-left h2 {
+    position: relative;
+    display: block;
+    
+    font-size: 32px;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: -1px;
+
+    padding-bottom: 25px;
+}
+
+.best-cate-bg {
+    position: absolute;
+    left: -20px;
+    top: 70px;
+    display: block;
+    width: 100%;
+    height: 56px;
+    background-color: #f0831f;
+    box-shadow: 4px 0 15px rgb(0 0 0 / 10%);
+
+    transition: top 0.6s;
+}
+
+.best-cate-bg::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 7px;
+    height: 13px;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -251px -50px;
+}
+
+.best-cate-active {
+    color: #fff !important;
+}
+
+.best-cate {
+    position: relative;
+    display: block;
+}
+
+.best-cate li { 
+    position: relative;
+    display: block;
+}
+
+.best-cate li a {
+    position: relative;
+    display: block;
+    
+    line-height: 55px;
+    font-size: 17px;
+    color: #b5b5b5;
+
+    transition: color 0.6s;
+}
+
+.best-cate li a em {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.best-10 {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -176px -50px;
+}
+
+.best-10-active {
+    background-position: -151px -50px !important;
+}
+
+.best-50 {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -227px -50px;
+}
+
+.best-50-active {
+    background-position: -202px -50px !important;
+}
+
+.best-right {
+    position: relative;
+    display: block;
+    width: 850px;
+    float: right;
+}
+
+.best-right-top {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.best-right-top .good:first-child,  
+.best-right-bottom .good:first-child {
+    margin-left: 0;
+}
+
+.best-right .good {
+    float: left;
+    margin-left: 20px;
+}
+
+.best-one {
+    width: 560px;
+    padding: 70px 40px;
+}
+
+.best-one .good-img {
+    width: 270px;
+    height: 270px;
+
+    float: right;
+}
+
+.best-one .good-name {
+    width: 198px;
+    padding-top: 55px;
+
+    font-size: 34px;
+    letter-spacing: -0.12em;
+    text-align: left;
+}
+
+.best-one .good-price {
+    font-size: 21px;
+    text-align: left;
+}
+
+.best-one .good-price em {
+    font-size: 19px;
+    color: #999;
+}
+
+.best-rank {
+    position: absolute;
+    left: 21px;
+    top: 21px;
+
+    display: block;
+    width: 66px;
+    height: 66px;
+    border: 1px solid #429e31;
+    text-align: center;
+
+    color: #999;
+    font-size: 18px;
+}
+
+.best-rank em {
+    font-style: normal;
+    font-size: 60px;
+    color: #429e31;
+    font-weight: 500;
+    line-height: 64px;
+}
+
+.best-right-bottom {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+/* 고객센터 */
+.customer {
+    position: relative;
+    display: block;
+    background-color: #f3f3f3;
+}
+
+.customer .container {
+    padding: 100px 0;
+}
+
+.customer-top {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.customer-top h2 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: -2.5px;
+}
+
+.customer-top a {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #777;
+}
+
+.customer-top a i {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 10px;
+    vertical-align: 0px;
+
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -268px -50px;
+}
+
+.customer-bottom {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.customer-bottom a {
+    position: relative;
+    display: block;
+    width: 270px;
+    height: 150px;
+    background-color: #fff;
+    float: left;
+
+    margin-left: 20px;
+    border: 1px solid #eee;
+    padding: 30px 20px;
+    padding-left: 97px;
+}
+
+.customer-bottom a:first-child {
+    margin-left: 0;
+}
+
+.customer-bottom a::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    display: block;
+    width: 57px;
+    height: 55px;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+}
+
+.customer-bottom a:nth-child(1)::before {
+    background-position: -79px -135px;
+}
+
+.customer-bottom a:nth-child(2)::before {
+    background-position: -150px -135px;
+}
+
+.customer-bottom a:nth-child(3)::before {
+    background-position: -150px -135px;
+}
+
+.customer-bottom a:nth-child(4)::before {
+    background-position: -11px -135px;
+}
+
+.customer-bottom h3 {
+    font-size: 16px;
+    letter-spacing: -0.75px;
+    color: #429e31;
+}
+
+.customer-bottom p {
+    font-size: 15px;
+    letter-spacing: -0.75;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+/* 커뮤니티 */
+.comm {
+    position: relative;
+    display: block;
+}
+
+.comm .container {
+    padding: 50px 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.comm-left {
+    position: relative;
+    display: block;
+    width: 510px;
+
+    float: left;
+}
+
+.notice-title {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.notice-title h2 {
+    position: relative;
+    display: block;
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.notice-title a {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+
+    font-size: 15px;
+    font-weight: 400;
+    color: #777;
+}
+
+.notice-title a i {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 10px;
+
+    vertical-align: 0px;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -268px -50px;
+
+    margin-left: 5px;
+}
+
+.notice-list {
+    position: relative;
+    display: block;
+}
+
+.notice-list li {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+
+.notice-list li a {
+    position: relative;
+    display: block;
+    width: calc(100% - 70px);
+    
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+
+.notice-list li span {
+    position: relative;
+    display: block;
+    width: 70px;
+
+    float: right;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+}
+
+.comm-right {
+    position: relative;
+    display: block;
+    width: 570px;
+    float: right;
+
+    overflow: hidden;
+}
+
+.comm-happy {
+    position: relative;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.comm-happy h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.tel {
+    position: relative;
+    display: block;
+    float: left;
+
+    font-size: 27px;
+    color: #000;
+    padding-top: 40px;
+}
+
+.time {
+    position: relative;
+    display: block;
+    float: left;
+
+    font-size: 14px;
+    color: #999;
+}
+
+.time em {
+    font-size: 17px;
+}
+
+.want {
+    color: #777;
+    line-height: 1.6;
+}
+
+.comm-happy > span {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+}
+
+.comm-happy > a {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    color: #777;
+
+    border: 1px solid #ccc;
+    background: #fff;
+
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+.comm-happy > a::after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 5px;
+    height: 7px;
+
+    background: url('../images/ico_sprite_pc.png') no-repeat;
+    background-position: -285px -50px;
+
+    vertical-align: 1px;
+    margin-left: 5px;
+}
+
+
+
+/* 하단 */
+.footer {
+    position: relative;
+    display: block;
+}
+
+/* 하단 메뉴 */
+.footer-top {
+    position: relative;
+    display: block;
+    height: 50px;
+
+    line-height: 50px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-top .container {
+    height: 100%;
+}
+
+.footer-menu {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.footer-menu li {
+    position: relative;
+    display: block;
+
+    float: left;
+
+    padding: 0 15px;
+}
+
+.footer-menu li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 1px;
+    height: 10px;
+    
+    background-color: #c5c5c5;
+}
+
+.footer-menu li:first-child {
+    padding-left: 0;
+}
+
+.footer-menu li:first-child::before {
+    content: none;
+}
+
+.footer-menu li:last-child {
+    padding-right: 0;
+}
+
+.footer-menu li:last-child::after {
+    content: none;
+}
+
+.footer-menu a { 
+    position: relative;
+    display: block;
+
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+.footer-menu strong {
+    font-weight: 700;
+    color: #333;
+}
+
+/* 하단 메인 */
+.footer-main {
+    position: relative;
+    display: block;
+}
+
+.footer-main .container {
+    padding-top: 33px;
+    padding-bottom: 35px;
+    /* overflow: hidden; */
+}
+
+.f-logo {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    float: left;
+
+    background: url('../images/f_logo.png') no-repeat;
+    background-position: left center;
+}
+
+.f-address {
+    position: relative;
+    display: block;
+    width: 810px;
+    float: left;
+}
+
+.info {
+    position: relative;
+    display: block;
+}
+
+.info li {
+    font-size: 12px;
+    color: #7e7e7e;
+    font-weight: 400;
+    letter-spacing: -0.75px;
+
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.info strong {
+    font-weight: 700;
+    color: #333;
+    margin-left: 3px;
+    text-decoration: underline;
+    margin-left: 3px;
+}
+
+.info em {
+    color: #333;
+}
+
+.copy {
+    font-size: 11px;
+    color: #7e7e7e;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    
+    margin-top: 10px;
+}
+
+.f-bar {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+}
+
+.f-bar::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 1px;
+    height: 9px;
+    background-color: #c5c5c5;
+
+    margin-top: 2px;
+}
+
+.f-site {
+    position: relative;
+    display: block;
+    width: 165px;
+    float: right;
+}
+
+.link-wrap {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 2px;
+    width: 165px;
+    height: 32px;
+    z-index: 999;
+}
+
+.link-bt {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: -9px;
+    line-height: 30px;
+
+    border-radius: 16px;
+    border: 1px solid #c5c5c5;
+    
+    font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.link-bt::after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+
+    background: url('../images/ui_arr_fsite.png') no-repeat;
+    background-position: 0px -13px;
+
+    vertical-align: 2px;
+    margin-left: 24px;
+}
+    
+.link-list {
+    position: relative;
+    display: block;
+}
+
+.link-list li {
+    position: relative;
+    display: block;
+}
+
+.link-sub {
+    position: relative;
+    display: block;
+}
+
+.link-sub li {
+    position: relative;
+    display: block;
+}
+
+.link-sub li a {
+    position: relative;
+    display: block;
+}
+
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+
+    clear: both;
+}
+
+.link-list {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    display: none;
+    width: 100%;
+
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+}
+
+.link-list > li {
+    position: relative;
+    display: block;
+
+    border-bottom: 1px dashed #c5c5c5;
+    margin-bottom: 10px;
+}
+
+.link-list > li:last-child {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.link-sub {
+    position: relative;
+    display: block;
+}
+
+.link-sub li {
+    position: relative;
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.link-sub li a {
+    position: relative;
+    display: block;
+
+    text-align: left;
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 0;
+}
