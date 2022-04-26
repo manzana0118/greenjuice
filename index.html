@@ -4,20 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
     <!-- favicon -->
-    <link rel="shortcut icon" sizes="32x32" href="../images/favicon_32x32.png">
+    <link rel="shortcut icon" sizes="32x32" href="/images/favicon_32x32.png">
     <title>풀무원 녹즙</title>
     <!--[if it IE 9]
     <script src="js/html5shiv.js"></script>
     <![endif]-->
-    <script src="js/respond.min.js"></script> 
+    <script src="js/respond.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery.min.js"></script>
+
+    <!-- Swiper -->
     <script src="js/swiper/swiper.min.js"></script>
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
-    
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,6 +31,20 @@
 </head>
 
 <body>
+    <!-- 모달창 -->
+    <button class="modal-bt">모달창열기</button>
+    <div class="modal">
+        <div class="modal-wrap">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h2>
+                이 사이트는 스터디용으로 제작되었으며 <br> 리소스는 원저작자에게 있습니다.
+            </h2>
+            <span class="modal-desc">
+                * 해당 사이트는 Chrome에 최적화되어 있습니다.
+            </span>
+            <button class="modal-close">CLOSE</button>
+        </div>
+    </div>
     <!-- 위로가기 -->
     <button class="gotop">
         <i></i>
@@ -207,7 +227,7 @@
                                         <span class="good-icon good-best">Best</span>
                                     </a>
                                 </div>
-                            </li>                            
+                            </li>
                         </ul>
 
                     </div>
@@ -328,7 +348,7 @@
                             <p>
                                 홈페이지에서 <br>
                                 다른 제품으로 변경할 수 <br>
-                                있나요? 
+                                있나요?
                             </p>
                         </a>
                         <a href="#">
@@ -419,13 +439,16 @@
                     <div class="f-address">
                         <ul class="info">
                             <li>
-                                ㈜풀무원 녹즙 <i class="f-bar"></i> 대표이사 : 박성후 <i class="f-bar"></i> 대표전화 : 02-2186-8500 <i class="f-bar"></i> 사업자등록번호 : 301-81-98406
+                                ㈜풀무원 녹즙 <i class="f-bar"></i> 대표이사 : 박성후 <i class="f-bar"></i> 대표전화 : 02-2186-8500 <i
+                                    class="f-bar"></i> 사업자등록번호 : 301-81-98406
                             </li>
                             <li>
                                 호스팅 제공자 : (주)풀무원녹즙 <i class="f-bar"></i> CS이메일 : pmocs_05@pulmuone.com
                             </li>
                             <li>
-                                통신판매번호 : 2016-충북증평-00045 <strong>사업자정보확인</strong> <i class="f-bar"></i> ㈜풀무원녹즙  충청북도 증평군 도안면 원명로 35 <i class="f-bar"></i> <em>고객센터</em> : 080-800-0393 (평일 09:00~18:00 토,일, 공휴일 휴무)
+                                통신판매번호 : 2016-충북증평-00045 <strong>사업자정보확인</strong> <i class="f-bar"></i> ㈜풀무원녹즙 충청북도 증평군
+                                도안면 원명로 35 <i class="f-bar"></i> <em>고객센터</em> : 080-800-0393 (평일 09:00~18:00 토,일, 공휴일
+                                휴무)
                             </li>
                         </ul>
                         <p class="copy">
@@ -464,7 +487,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div>    
+                        </div>
                     </div>
                 </div>
             </div>

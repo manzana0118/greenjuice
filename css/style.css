@@ -147,6 +147,97 @@ body {
     line-height: 20px;
 }
 
+/* 모달창 */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+}
+
+.modal-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 400px;
+    height: 250px;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-wrap h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 95px;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #000;
+
+    white-space: nowrap;
+    text-align: center;
+}
+
+.modal-wrap .modal-desc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 155px;
+    font-family: 'Noto Sans KR';
+    font-size: 16px;
+    color: #666;
+
+    white-space: nowrap;
+    text-align: center;
+}
+
+.fa-exclamation-triangle {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-close {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    display: block;
+    width: 150px;
+    height: 30px;
+
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.modal-bt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100px;
+    height: 40px;
+
+    border: 0;
+
+    color: #fff;
+    background-color: #000;
+
+    z-index: 1000;
+}
+
 /* 위로가기 */
 .gotop {
     position: fixed;
