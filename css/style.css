@@ -104,11 +104,11 @@ body {
     position: absolute;
     left: 10px;
     top: 10px;
-    
+
     display: block;
     width: 36px;
     height: 36px;
-    
+
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -131,7 +131,7 @@ body {
     position: absolute;
     left: 20px;
     top: 20px;
-    
+
     display: block;
     width: 40px;
     height: 20px;
@@ -280,6 +280,7 @@ body {
 
     margin-bottom: 5px;
 }
+
 /* 위로가기 끝 */
 
 .wrap {
@@ -313,6 +314,10 @@ body {
 
 .header-top .container {
     height: 100%;
+}
+
+.header-top .container li:hover a {
+    text-decoration: underline;
 }
 
 .header-top-left {
@@ -364,7 +369,7 @@ body {
     position: relative;
     display: block;
 
-    font-family: "돋움", 'Dotum','Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: "돋움", 'Dotum', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 11px;
     line-height: 29px;
     color: #9b9b9b;
@@ -418,7 +423,7 @@ body {
     position: relative;
     display: block;
 
-    font-family: "돋움", 'Dotum','Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: "돋움", 'Dotum', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 11px;
     line-height: 29px;
     color: #9b9b9b;
@@ -459,7 +464,7 @@ body {
     display: block;
 }
 
-.gnb {    
+.gnb {
     position: relative;
     display: block;
 
@@ -468,14 +473,14 @@ body {
     font-size: 0;
 }
 
-.gnb > li {    
+.gnb>li {
     position: relative;
     display: inline-block;
     /* float: left; */
     padding: 0 27px;
 }
 
-.gnb > li > a {    
+.gnb>li>a {
     position: relative;
     display: block;
     font-size: 20px;
@@ -485,7 +490,7 @@ body {
     transition: color 0.3s;
 }
 
-.gnb > li > a:hover {
+.gnb>li>a:hover {
     color: #81b825;
 }
 
@@ -587,7 +592,9 @@ body {
     z-index: 99;
 }
 
-.sw-visual-pg .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+.sw-visual-pg .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     position: absolute;
     left: calc(50% + 520px) !important;
     bottom: 110px !important;
@@ -651,7 +658,7 @@ body {
     width: 440px;
     height: 90px;
 
-    /* background-color: #98ce67; */    
+    /* background-color: #98ce67; */
     padding-right: 20px;
 
     float: left;
@@ -677,7 +684,7 @@ body {
     display: block;
     width: 46px;
     height: 40px;
-    background: url('../images/ico_sprite_pc.png') no-repeat;    
+    background: url('../images/ico_sprite_pc.png') no-repeat;
 }
 
 .service-ico-01:before {
@@ -713,7 +720,7 @@ body {
     z-index: 99;
 }
 
-.sw-service-pg {    
+.sw-service-pg {
     width: 100%;
     text-align: right;
 }
@@ -808,7 +815,7 @@ body {
     overflow: hidden;
 }
 
-.today-list > li {
+.today-list>li {
     position: relative;
     display: block;
 
@@ -821,7 +828,7 @@ body {
     display: block;
     width: 270px;
     height: 410px;
-    
+
     background-color: #fff;
     border: 1px solid #ccc;
 
@@ -855,7 +862,7 @@ body {
 }
 
 .today-more a::after {
-    content:'';
+    content: '';
     position: relative;
     display: inline-block;
     width: 30px;
@@ -889,7 +896,7 @@ body {
 .best-left h2 {
     position: relative;
     display: block;
-    
+
     font-size: 32px;
     color: #333;
     font-weight: 500;
@@ -934,7 +941,7 @@ body {
     display: block;
 }
 
-.best-cate li { 
+.best-cate li {
     position: relative;
     display: block;
 }
@@ -942,7 +949,7 @@ body {
 .best-cate li a {
     position: relative;
     display: block;
-    
+
     line-height: 55px;
     font-size: 17px;
     color: #b5b5b5;
@@ -996,7 +1003,7 @@ body {
     margin-bottom: 20px;
 }
 
-.best-right-top .good:first-child,  
+.best-right-top .good:first-child,
 .best-right-bottom .good:first-child {
     margin-left: 0;
 }
@@ -1257,7 +1264,7 @@ body {
     position: relative;
     display: block;
     width: calc(100% - 70px);
-    
+
     float: left;
     font-size: 15px;
     font-weight: 400;
@@ -1328,17 +1335,17 @@ body {
     line-height: 1.6;
 }
 
-.comm-happy > span {
+.comm-happy>span {
     position: relative;
     display: block;
     padding-top: 20px;
 }
 
-.comm-happy > a {
+.comm-happy>a {
     position: relative;
     display: inline-block;
     height: 30px;
-    
+
     font-size: 13px;
     line-height: 28px;
     text-align: center;
@@ -1351,7 +1358,7 @@ body {
     margin-top: 5px;
 }
 
-.comm-happy > a::after {
+.comm-happy>a::after {
     content: '';
     position: relative;
     display: inline-block;
@@ -1413,7 +1420,7 @@ body {
     display: block;
     width: 1px;
     height: 10px;
-    
+
     background-color: #c5c5c5;
 }
 
@@ -1433,7 +1440,7 @@ body {
     content: none;
 }
 
-.footer-menu a { 
+.footer-menu a {
     position: relative;
     display: block;
 
@@ -1509,7 +1516,7 @@ body {
     color: #7e7e7e;
     font-weight: 400;
     letter-spacing: -0.5px;
-    
+
     margin-top: 10px;
 }
 
@@ -1562,7 +1569,7 @@ body {
 
     border-radius: 16px;
     border: 1px solid #c5c5c5;
-    
+
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
     color: #555;
     font-size: 13px;
@@ -1573,23 +1580,34 @@ body {
     background-color: #fff;
 }
 
-.link-bt::after {
-    content: '';
+.link-bt span {
     position: relative;
     display: inline-block;
     width: 11px;
     height: 6px;
-
     background: url('../images/ui_arr_fsite.png') no-repeat;
     background-position: 0px -13px;
-
     vertical-align: 2px;
     margin-left: 24px;
 }
-    
+
+.link-bt-span-active {
+    transform: rotateX(180deg);
+}
+
 .link-list {
-    position: relative;
-    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+
+    display: none;
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #fff;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
 }
 
 .link-list li {
@@ -1620,20 +1638,8 @@ body {
     clear: both;
 }
 
-.link-list {
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    display: none;
-    width: 100%;
 
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #c5c5c5;
-    border-radius: 15px;
-}
-
-.link-list > li {
+.link-list>li {
     position: relative;
     display: block;
 
@@ -1641,7 +1647,7 @@ body {
     margin-bottom: 10px;
 }
 
-.link-list > li:last-child {
+.link-list>li:last-child {
     border: none;
     margin-bottom: 0px;
 }
