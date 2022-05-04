@@ -57,6 +57,10 @@ window.onload = function(){
         pagination: {
             el: '.sw-visual-pg',
             type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.sw-visual-next',
+            prevEl: '.sw-visual-prev',
         }
     });
 
